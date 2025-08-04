@@ -1,0 +1,129 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+main {
+  max-width: 800px;           /* ne legyen túl széles nagy képernyőn */
+  width: 100%;                /* kis képernyőn vegye fel a teljes szélességet */
+  margin: 0 auto;             /* középre igazítás */
+  padding: 0 1rem 200px 1rem; /* bal/jobb térköz kis képernyőre is */
+  box-sizing: border-box;     /* hogy a padding ne torzítson */
+  text-align: justify;
+}
+body {
+    background-color: #f4f1ee;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  
+  margin-top: 80px; 
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+footer a {
+    color: lightblue;
+}
+
+footer a:hover {
+    color:cyan;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+footer li {
+    display: inline;
+}
+
+#kep img{
+    width: 200px;          
+    border-radius: 8px;    
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+}
+section {
+  scroll-margin-top: 60px;  /* ez ellensúlyozza a nav magasságát */
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 999;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
